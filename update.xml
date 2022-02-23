@@ -1,7 +1,7 @@
 <updates>
     <update>
         <name>Quick Admin Navigation for Joomla 4</name>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <element>mod_quickadminnav</element>
         <type>module</type>
         <client>administrator</client>
