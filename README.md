@@ -41,7 +41,7 @@ Install the dependencies.
 ```
 npm install
 ```
-Compile and serves
+Compile and serve
 ```
 npm run serve
 ```
