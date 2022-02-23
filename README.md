@@ -49,7 +49,8 @@ To compile and minify for production
 ```
 npm run build
 ```
-###Hot Module Reloading
+### Hot Module Reloading
+
 For hot module reloading to work you may need to make a couple of changes.
 
 1. Make a note of the server port number in the terminal after the serve command. Set the port number in
