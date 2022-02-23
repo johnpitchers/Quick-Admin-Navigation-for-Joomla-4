@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="administrator" method="upgrade">
+	<name>Quick Admin Navigation</name>
+	<author>John Pitchers</author>
+	<creationDate>Feb 2022</creationDate>
+	<copyright>(C) 2022 John Pitchers</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>john@viperfish.com.au</authorEmail>
+	<authorUrl>viperfish.com.au</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_QUICKADMINNAV_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Module\Quickadminnav</namespace>
+	<files>
+		<filename module="mod_quickadminnav">mod_quickadminnav.php</filename>
+		<folder>app</folder>
+		<folder>language</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/mod_quickadminnav.ini</language>
+		<language tag="en-GB">language/en-GB/mod_quickadminnav.sys.ini</language>
+	</languages>
+	<help key="Admin_Modules:_Administrator_Quickadminnav" />
+	<config>
+		<fields name="params">
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					validate="moduleLayout"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Quickadminnav Updates">https://raw.githubusercontent.com/johnpitchers/Quick-Admin-Navigation-for-Joomla-4/main/update.xml</server>
+	</updateservers>
+</extension>
