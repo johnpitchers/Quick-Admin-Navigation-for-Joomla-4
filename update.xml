@@ -6,9 +6,9 @@
         <type>module</type>
         <client>administrator</client>
         <folder />
-        <infourl title="Quickadminnav for Joomla 4. 1.0.0">https://github.com/johnpitchers/Quick-Admin-Navigation-for-Joomla-4.git</infourl>
+        <infourl title="Quickadminnav for Joomla 4. 1.0.1">https://github.com/johnpitchers/Quick-Admin-Navigation-for-Joomla-4.git</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/johnpitchers/Quick-Admin-Navigation-for-Joomla-4/main/mod_quickadminnav_1.0.0.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://raw.githubusercontent.com/johnpitchers/Quick-Admin-Navigation-for-Joomla-4/main/mod_quickadminnav_1.0.1.zip</downloadurl>
         </downloads>
         <tags>
             <tag>stable</tag>
