@@ -17,7 +17,8 @@
                 <span v-html="result.item.display"></span>
               </li>
             </ul>
-            <p v-else class="mb-2 px-3">Nothing to see here</p>
+            <p v-else class="mt-1 px-3">
+              <i class="me-1 icon-fw icon-exclamation-circle"></i> No results</p>
           </div>
         </div>
         <div v-if="state.loading" class="qan-spinner spinner-border text-primary" role="status">
@@ -103,6 +104,7 @@ export default {
       }
       if (state.showModal) {
         nextTick(() => {
+          state.searchText = '';
           quicksearchinputbox.value.focus();
           addMouseEvents();
         });
@@ -110,7 +112,6 @@ export default {
     }
 
     function addMouseEvents() {
-
       //Clicking the modal background will close it. Clicking within it will not close it.
       let target = "quickadminnav-modal";
       document.getElementById(target).addEventListener('mouseup', (e) => {
